@@ -1,0 +1,14 @@
+	<table border="1" style = "margin:10px;width:50%">
+		<tr >
+			<th>input 1</th>
+			<th>input 2</th>
+			<th>Action</th>
+		</tr>
+		<tr style="text-align: center" ng-repeat="data in $ctrl.data">
+			<td>{{ data.prop1 }}</td>
+			<td>{{ data.prop2 }}</td>
+			<td><button ng-click="$ctrl.delete($index)">delete</button></td>
+		</tr>
+	</table>
+
+	Jumlah data saat ini : {{ $ctrl.jumlahData }} 

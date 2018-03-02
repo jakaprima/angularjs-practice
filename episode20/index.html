@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<title>CUSTOM SERVICES</title>
+	<script type="text/javascript" src="../angular.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</head>
+<body>
+<h1>CUSTOM SERVICE</h1>
+<div ng-controller="controller1 as ctrl1">
+<input type="text" ng-model="ctrl1.itemName" placeholder="nama item">
+<input type="text" ng-model="ctrl1.itemQuantity" placeholder="kuantitas">
+<button ng-click="ctrl1.addItem()">tambah item ke shopping list</button>
+{{ ctrl1.itemName }}
+</div>
+
+<div ng-controller="controller2 as ctrl2">
+<ol>
+	<li ng-repeat="item in ctrl2.array1">
+		{{ item.quantity }} dari {{ item.name }}
+		<button ng-click="ctrl2.removeItem($index);">remove Item</button>
+	</li>
+</ol>
+</div>
+
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html ng-app='App'>
+  <head>
+    <meta charset="utf-8">
+    <script src="../angular.min.js"></script>
+    <script src="app.js"></script>
+    <style> body { font-size: 1.2em; }</style>
+    <title>Custom Service</title>
+  </head>
+  <body>
+    <h1>Custom Service</h1>
+    <div ng-controller='Controller1 as itemAdder'>
+      <input type="text" ng-model="itemAdder.itemName" placeholder="item name">
+      <input type="text" ng-model="itemAdder.itemQuantity" placeholder="quantity">
+      <button ng-click="itemAdder.addItem();">Add Item To Shopping List</button>
+    </div>
+
+    <div ng-controller='ShoppingListShowController as showList'>
+      <ol>
+        <li ng-repeat="item in showList.items">
+          {{ item.quantity }} of {{ item.name }}
+          <button ng-click="showList.removeItem($index);">Remove Item</button>
+        </li>
+      </ol>
+    </div>
+  </body>
+</html> -->

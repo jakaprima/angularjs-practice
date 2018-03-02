@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="DIInjectModule">
+<head>
+	<title>dependency injector</title>
+	<script type="text/javascript" src="../angular.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</head>
+<body>
+<h1>Dependency Injector</h1>
+<!-- dari mana $scope berasal? jawabannya adalah angular js memakai this object untuk kita, dan bagaimana caranya mendapatkan object tersebut sebagai bagian dari controller kita itu disebut dengan dependency injeksi / ketergantungan injeksi
+
+jadi dependency injeksi adalah satu lagi dari pola desain, kita sudah melihat modelview, viewmodel, dan ada juga yang dipanggi dengan dependency injection jadi pola disain ini implementasi sesuatu yang disebut pembalikan control untuk memperbaiki dependency .
+jadi inversion atau pembalikan dari control adalah konstruksi atau approach / pendekatan untuk memperbaiki dependency untuk mengerti maksud dari pembalikan dari control, mari kita lihat biasanya tentang arsitek atau persamaan componen contohnya shopping cart.
+jika kita punya keranjang belanja, kita memiliki beberapa bagian modul yang disebut cartProcessingbank1 basicnya proces untuk bank1 module dan itu terdapat satu method pembayaran yang diberikan credit card number dan jumlahnya, alasan kita memiliki creditcard untuk bank tertentu karena bank tertentu tersebut mungkin memiliki url tertentu kita untuk kontak bank melewati tertentu dapat memiliki API jadi kita tidak ingin mengambil semua code dan mengirimnya ke shopping cart karena keranjang belanjanya kana sangat banyak dan sangat ketat, akan banyak persamaan yang ketat pada bank API tertentu. jadi cara kita akan memberi contoh / instantiante proses dari keranjang module didalam shopping cart -->
+
+<div ng-controller="controllerName">
+<input type="text" ng-model="name" ng-blur=upper();>
+</div>
+
+</body>
+</html>

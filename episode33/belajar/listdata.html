@@ -1,0 +1,10 @@
+<h3>Title: {{ $ctrl.judul }}</h3>
+{{ $ctrl33.getBarang }}
+<ol>
+  <li ng-repeat="datacoba in $ctrl.getBarang">
+    {{ datacoba }}
+    <button ng-click="$ctrl.delete($index)" >delete</button>
+    
+  </li>
+</ol>
+<div class="error">WARNING! WARNING! indonesia DETECTED!</div>

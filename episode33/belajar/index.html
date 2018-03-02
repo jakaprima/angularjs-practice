@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="app33">
+<head>
+	<title>component</title>
+</head>
+<body >
+<h1>Component</h1>
+<div ng-controller="controller33 as ctrl33">
+
+	<input type="text" ng-model="ctrl33.input1">
+	<input type="text" ng-model="ctrl33.input2">
+	<button ng-click="ctrl33.add()">Tambah</button>
+	<span>{{ ctrl33.lastRemoved }}</span>
+
+
+
+	<component-coba
+		get-barang="ctrl33.getBarang"
+		judul = "{{ ctrl33.judul }}"
+		saat-delete = "ctrl33.delete(index)"
+	></component-coba> 
+	<!-- get-barang harus sama ctrl33.getBarang -->
+</div>
+<!--     judul="{{ctrl33.title}}"
+    on-remove="ctrl33.removeItem(index)" -->
+
+<script src="../../jquery32.min.js"></script>
+<script type="text/javascript" src="../../angular.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>

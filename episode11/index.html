@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html ng-app="appeps8">
+<head>
+	<title>tutorial expresstion dan interpolation</title>
+</head>
+<body>
+<h1> Tutorial expresstion dan interpolation </h1>
+<div ng-controller="controllereps8">
+
+<button ng-click="ubahgambar()">klik rubah poto</button>
+<img width="300px" height="300px" ng-src="gambar/{{imageFileName}}">
+	
+</div>
+<script type="text/javascript" src="../angular.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>

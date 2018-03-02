@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="module13">
+<head>
+	<title>episode 13 filter factory</title>
+</head>
+<body>
+<h1> Membuat Custom Filter </h1>
+<div ng-controller="controller13">
+{{ name }}<br>
+original = {{ function1() }}<br>
+hasil custom filter = {{ function2() }}<br>
+filter = {{ function2() | filter2 : 'cinta' : 'star' | uppercase }}
+</div>
+
+
+<script type="text/javascript" src="../angular.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>

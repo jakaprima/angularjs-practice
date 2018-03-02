@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf8">
+	<script type="text/javascript" src="../angular.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+	<title>angular calculator</title>
+</head>
+<body ng-app="modulCalculator">
+<h1>Angular 1 calculator</h1>
+<div ng-controller="controllerCalculator">
+<!-- 	kita harus tahu bagaimana caranya untuk membiarkan controller kita tau setiap kali user kita tekan key
+	dan kita melihat ke model kita untuk mengkalkulasi ulang model meaning -->
+	<Input 
+	type="text" 
+	ng-model="data"
+	ng-keyup="displayNumeric();">
+	total value orangnya adalah : {{ totalValue }}
+
+</div>
+</body>
+</html>

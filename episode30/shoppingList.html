@@ -1,0 +1,16 @@
+<h3>Title: {{ list.myTitle }}</h3>
+<ol>
+  <li ng-repeat="item in list.items">
+    {{ item.quantity }} of {{ item.name }}
+    <button ng-click="list.badRemove($index);">Bad Remove Item</button>
+    <button ng-click="list.onRemove({index: $index});">Remove Item</button>
+<!--     method onRemove dari isolasi scope mapping
+    ({map dari deklarasi parent template arg name ke value dari directive}) 
+    yang dipassing itu map object bukan argument 
+    key dari map object harus sesuai dengan argument name nama dari parent controller yang mendeklarasikannya
+    contoh : on-remove="list.removeItem(index) index di controller ini harus sama
+    <button ng-click="list.onRemove({index: dengan index ini di ruang isolasi scope directive -->
+  </li>
+</ol>
+<div class="error" ng-if="list.cookiesInList()">WARNING! WARNING! COOKIES DETECTED!</div>
+Contact GitHub API Training Shop Blog About
